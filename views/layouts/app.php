@@ -29,6 +29,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
     <!--顶栏-->
     <div class="layui-header">
+
+        <div class="layui-logo layui-hide-xs layui-bg-black">
+            <img src="http://fakeimg.pl/200x60/?text=LOGO" alt="logo">
+        </div>
+
         <ul class="layui-nav layui-layout-left">
             <li class="layui-nav-item layui-hide-xs"><a href="<?=Url::to(['site/index'])?>">看板</a></li>
             <li class="layui-nav-item layui-hide-xs"><a href="<?=Url::to(['site/about'])?>">关于</a></li>
