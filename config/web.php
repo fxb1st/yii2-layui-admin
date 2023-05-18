@@ -8,6 +8,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'language' => 'zh-CN',
     'bootstrap' => ['log'],
+    'layout' => 'app',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
