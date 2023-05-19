@@ -31,7 +31,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <div class="layui-header">
 
         <div class="layui-logo layui-hide-xs layui-bg-black">
-            <img src="http://fakeimg.pl/200x60/?text=LOGO" alt="logo">
+
         </div>
 
         <ul class="layui-nav layui-layout-left">

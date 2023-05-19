@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use Yii;
+use yii\data\ArrayDataProvider;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
@@ -61,7 +62,15 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $this->getView()->title = '首页';
+        $dataProvider = new ArrayDataProvider([
+            'allModels' => [
+                ['id'=>1,'name'=>'China'],
+                ['id'=>2,'name'=>'Japan'],
+                ['id'=>3,'name'=>'Russia'],
+            ]
+        ]);
+        return $this->render('index', compact('dataProvider'));
     }
 
     /**
